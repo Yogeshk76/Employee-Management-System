@@ -12,9 +12,6 @@ const Login = (handleLogin) => {
   const sumbitHandler = (e) => {
     e.preventDefault();
     handleLogin.handleLogin(email, password);
-    console.log('email is ', email);
-    console.log('password is ', password);
-
 
     setEmail('');
     setPassword('');
