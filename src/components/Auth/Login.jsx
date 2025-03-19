@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-const Login = () => {
+const Login = (handleLogin) => {
+
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -10,6 +11,7 @@ const Login = () => {
 
   const sumbitHandler = (e) => {
     e.preventDefault();
+    handleLogin.handleLogin(email, password);
     console.log('email is ', email);
     console.log('password is ', password);
 
